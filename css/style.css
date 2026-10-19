@@ -1,0 +1,88 @@
+*{margin: 0;
+	padding: 0;
+	background: #52C2FE;
+
+}
+#container{
+	width: 1080px;
+	height: 550px;
+		background: #52C2FE;
+	background-image: url('../img/sultan4.jpg');
+	margin: auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.sm{
+	background: #52C2FE;
+	text-align: center;
+
+
+}
+
+#calculator{
+	width: 320px;
+	height: 510px;
+	background: #C2E7FF;
+	margin-left: 650px;
+	top: 20px;
+	position: relative;
+	color:  #EE6C09;
+  box-shadow: 5px 10px 10px 10px rgba(55, 100, 250, 0.5);
+}
+#result{
+	height: 120px;
+	background:#C2E7FF;
+}
+
+#history{
+	text-align: right;
+	height: 40px;
+	margin: 0 15px;
+	font-size: 15px;
+	color: #000000;
+	background: #ffffff;
+
+}
+#output{
+	text-align: right;
+	height: 60px;
+	margin: 0 15px;
+	font-size: 15px;
+	color: #000000;
+	background: #ffffff;
+	
+}
+#keyboard{
+	height: 390px;
+	
+}
+.number,.operator,.empty{
+	width: 50px;
+	height: 50px;
+	margin: 14px;
+	float: left;
+	border-radius: 10px;
+	font-weight: bold;
+	font-size: 20px;
+	cursor:pointer;
+
+/ *	transform: scale(1.1);*/
+
+}
+.number,.empty{
+	background:#52C2FE;
+}
+.operator{
+	background:#F89456;
+	color: #ffffff;
+}
+button:nth-child(1){
+	background:#144E76;
+}
+button:nth-child(2){
+	background:#144E76;
+}
+button:nth-child(3){
+	background:#144E76;
+}
