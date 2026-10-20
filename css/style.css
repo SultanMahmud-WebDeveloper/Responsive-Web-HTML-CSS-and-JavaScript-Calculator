@@ -1,63 +1,88 @@
-*{margin: 0;
+/*
+Theme Name: mahmudThem
+Version: 0.1.0
+Author: Md. Sultan Mahmud
+Author URI: https://sultanmahmud-webdeveloper.github.io/portfolio-2/index.html
+Description: mahmudThem is a custom calculator,created by Md. Sultan Mahmud.
+*/
+
+
+
+
+
+
+*{
+	margin: 0;
 	padding: 0;
 	background: #52C2FE;
-
 }
+
 #container{
 	width: 1080px;
 	height: 550px;
-		background: #52C2FE;
+	background: #52C2FE;
 	background-image: url('../img/sultan4.jpg');
 	margin: auto;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 }
+
 .sm{
-	background:  #144E76;
+	background: #C2E7FF;
 	text-align: center;
-
-
 }
 
 #calculator{
 	width: 320px;
-	height: 510px;
+	height: 520px;               
 	background: #C2E7FF;
 	margin-left: 650px;
 	top: 20px;
 	position: relative;
-	color:  #EE6C09;
-  box-shadow: 5px 10px 10px 10px rgba(55, 100, 250, 0.5);
+	color: #EE6C09;
+	border-radius: 5px;         
+	box-shadow: 5px 10px 10px 10px rgba(55, 100, 250, 0.5);
+	padding-top: 20px;           
+	box-sizing: border-box;
 }
+
+
 #result{
-	height: 120px;
-	background:#C2E7FF;
+	height: 100px;
+	margin: 15px 15px 15px 15px;
+	padding: 0px;
+	background: #ffffff;
+	border-radius: 15px;     
 }
 
 #history{
 	text-align: right;
-	height: 40px;
-	margin: 0 15px;
-	font-size: 15px;
-	color: #000000;
-	background: #ffffff;
-
+	padding: 5px;
+	height: 25px;
+	margin: 0;
+	font-size: 18px;
+	color: #666666;
+	background: transparent;
 }
+
 #output{
 	text-align: right;
-	height: 60px;
-	margin: 0 15px;
-	font-size: 15px;
+	padding: 5px;
+	height: 45px;
+	margin: 0;
+	font-size: 30px;
 	color: #000000;
-	background: #ffffff;
-	
+	background: transparent;
 }
+
+
 #keyboard{
 	height: 390px;
-	
+	color: #82877FB3;
 }
-.number,.operator,.empty{
+
+.number, .operator, .empty{
 	width: 50px;
 	height: 50px;
 	margin: 14px;
@@ -65,24 +90,102 @@
 	border-radius: 10px;
 	font-weight: bold;
 	font-size: 20px;
-	cursor:pointer;
-
-/ *	transform: scale(1.1);*/
-
+	cursor: pointer;
 }
-.number,.empty{
-	background:#52C2FE;
+
+.number, .empty{
+	background: #6596b0;
 }
+
 .operator{
-	background:#F89456;
+	background: #F89456;
 	color: #ffffff;
 }
-button:nth-child(1){
-	background:#144E76;
-}
-button:nth-child(2){
-	background:#144E76;
-}
+
+button:nth-child(1),
+button:nth-child(2),
 button:nth-child(3){
-	background:#144E76;
+	background: #144E76;
+}
+
+/* 
+ Mobile Responsive Stylesheet (Media Query)
+    */
+
+@media screen and max-width: 768px {
+
+	
+	body {
+		overflow-x: hidden;
+	}
+
+	
+	#container {
+		width: 100% !important;
+		max-width: 100% !important;
+		height: auto !important;
+		min-height: 100vh;
+		background-size: cover;
+		background-position: center;
+		padding: 20px 10px;
+		box-sizing: border-box;
+	}
+
+	
+	#calculator {
+		width: 90% !important;         
+		max-width: 340px !important;  
+		height: auto !important;
+		margin: 20px auto !important;   
+		top: 0 !important;             
+		padding-bottom: 20px;
+	}
+
+	#result {
+		height: auto !important;
+		margin: 10px !important;
+		padding: 10px !important;
+	}
+
+	#history {
+		font-size: 16px !important;
+		height: auto !important;
+	}
+
+	#output {
+		font-size: 26px !important;
+		height: auto !important;
+		word-break: break-all;          
+	}
+
+	
+	#keyboard {
+		height: auto !important;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 8px;                       
+		padding: 5px;
+	}
+
+	.number, .operator, .empty {
+		width: 20% !important;          
+		height: 50px !important;
+		margin: 4px !important;         
+		float: none !important;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+@media screen and max-width: 360px {
+	#calculator {
+		width: 95% !important;
+	}
+	
+	.number, .operator, .empty {
+		font-size: 16px !important;
+		height: 45px !important;
+	}
 }
